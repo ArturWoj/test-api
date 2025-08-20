@@ -1,27 +1,54 @@
 {
-  "persons": [
-    {
-      "id": 1,
-      "name": "Jan Kowalski",
-      "friends": [
-        { "id": 101, "name": "Adam Nowak", "age": 25 },
-        { "id": 102, "name": "Ewa Malinowska", "age": 28 }
-      ]
+  "company": {
+    "id": 1,
+    "name": "Tech Solutions Sp. z o.o.",
+    "address": {
+      "street": "ul. Warszawska 10",
+      "city": "Warszawa",
+      "country": "Polska"
     },
-    {
-      "id": 2,
-      "name": "Anna Wiśniewska",
-      "friends": [
-        { "id": 103, "name": "Marek Lewandowski", "age": 30 },
-        { "id": 104, "name": "Karolina Zielińska", "age": 27 }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Piotr Kamiński",
-      "friends": [
-        { "id": 105, "name": "Łukasz Kaczmarek", "age": 22 }
-      ]
-    }
-  ]
+    "departments": [
+      {
+        "id": 1,
+        "name": "IT",
+        "persons": [
+          {
+            "id": 1,
+            "name": "Jan Kowalski",
+            "role": "Backend Developer",
+            "email": "jan.kowalski@example.com",
+            "friends": [
+              { "id": 101, "name": "Adam Nowak", "age": 25 },
+              { "id": 102, "name": "Ewa Malinowska", "age": 28 }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Anna Wiśniewska",
+            "role": "Frontend Developer",
+            "email": "anna.wisniewska@example.com",
+            "friends": [
+              { "id": 103, "name": "Marek Lewandowski", "age": 30 },
+              { "id": 104, "name": "Karolina Zielińska", "age": 27 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HR",
+        "persons": [
+          {
+            "id": 3,
+            "name": "Piotr Kamiński",
+            "role": "HR Manager",
+            "email": "piotr.kaminski@example.com",
+            "friends": [
+              { "id": 105, "name": "Łukasz Kaczmarek", "age": 22 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
